@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(37, 37, 37);
+  margin: 0;
+  padding: 0 1rem;
+}
+main {
+  background-image: url("./SWAPI_r2d2_black.svg");
+  background-size: contain;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+}
+.main_container {
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(178, 252, 67);
+  font-weight: 500;
+}
+#h1_span {
+  color: white;
+}
+h2 {
+  color: white;
+  font-weight: 400;
+}
+
+.SWAPI-form,
+.SWAPI-form-wrapper {
+  display: flex;
+  align-items: center;
+}
+.form__img {
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+#SWAPIcontentType,
+#SWAPIid,
+#SWAPIsearch {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+#SWAPIid {
+  margin: 0 2rem 0 0.5rem;
+}
+#SWAPIsearch {
+  background-color: rgb(178, 252, 67);
+}
+
+.SWAPI-response {
+  color: white;
+  margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+.error-output {
+  font-size: 2rem;
+  color: rgb(201, 11, 11);
+  text-align: center;
+  margin-top: 2rem;
+}
+.response-output {
+  color: white;
+  margin-top: 2rem;
+}
+.response-output div {
+  margin-bottom: 1rem;
+}
+
+.finally-output {
+  display: flex;
+  color: rgb(178, 252, 67);
+  font-size: 2rem;
+  margin-top: 2rem;
+}

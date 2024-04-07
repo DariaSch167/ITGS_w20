@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.svgrepo.com/show/440536/stormtrooper.svg"
+      type="image/svg" />
+    <title>The Star Wars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="w20t1_SWAPI.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main_container">
+        <h1>
+          Hi there! Welcome to
+          <span id="h1_span">The Star Wars</span> knowledgebase &rsaquo;&rsaquo;
+        </h1>
+        <h2>Choose parameters to explore:</h2>
+        <div class="SWAPI-form-wrapper">
+          <form name="SWAPI-request-form" class="SWAPI-form">
+            <select
+              id="SWAPIcontentType"
+              name="SWAPI-content-type"
+              class="form__select">
+              <option value="Select Type" selected disabled>Select Type</option>
+              <option value="people">people</option>
+              <option value="planets">planets</option>
+              <option value="species">species</option>
+              <option value="starships">starships</option>
+            </select>
+            <input
+              type="number"
+              id="SWAPIid"
+              name="SWAPI-id"
+              class="form__input"
+              placeholder="Put in ID#" />
+          </form>
+          <button id="SWAPIsearch" class="form__button">Let's search!</button>
+        </div>
+        <div class="SWAPI-response"></div>
+      </div>
+    </main>
+    <script src="./w20t1_SWAPI.js"></script>
+  </body>
+</html>
